@@ -338,9 +338,11 @@ is_in_viewport (GtkWindow    *window,
 	{
 		return FALSE;
 	}
+	
+	return TRUE;
 
 	/* Check for viewport match */
-	gdkwindow = gtk_widget_get_window (GTK_WIDGET (window));
+	/*gdkwindow = gtk_widget_get_window (GTK_WIDGET (window));
 	gdk_window_get_position (gdkwindow, &x, &y);
 	width = gdk_window_get_width (gdkwindow);
 	height = gdk_window_get_height (gdkwindow);
@@ -354,7 +356,7 @@ is_in_viewport (GtkWindow    *window,
 	return x + width * .25 >= viewport_x &&
 	       x + width * .75 <= viewport_x + sc_width &&
 	       y >= viewport_y &&
-	       y + height <= viewport_y + sc_height;
+	       y + height <= viewport_y + sc_height;*/
 }
 
 static GeditWindow *
