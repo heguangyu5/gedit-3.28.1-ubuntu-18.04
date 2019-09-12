@@ -6,17 +6,17 @@ plugin_LTLIBRARIES            =
 plugin_gsettings_SCHEMAS      =
 dist_plugin_gsettings_SCHEMAS =
 
-include plugins/checkupdate/Makefile.am
-include plugins/docinfo/Makefile.am
+#include plugins/checkupdate/Makefile.am
+#include plugins/docinfo/Makefile.am
 include plugins/externaltools/Makefile.am
 include plugins/filebrowser/Makefile.am
-include plugins/modelines/Makefile.am
+#include plugins/modelines/Makefile.am
 include plugins/pythonconsole/Makefile.am
-include plugins/quickopen/Makefile.am
-include plugins/snippets/Makefile.am
-include plugins/sort/Makefile.am
-include plugins/spell/Makefile.am
-include plugins/time/Makefile.am
+#include plugins/quickopen/Makefile.am
+#include plugins/snippets/Makefile.am
+#include plugins/sort/Makefile.am
+#include plugins/spell/Makefile.am
+#include plugins/time/Makefile.am
 
 gsettings_SCHEMAS += $(plugin_gsettings_SCHEMAS)
 
